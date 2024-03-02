@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameLib.BoardGame">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="GameLib.Game" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="3.688" />
+        <Point X="4.5" Y="3.688" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ACAIAAAAAACAAAAAwAAAAAAQAAIEAAACQAACAAAAAAA=</HashCode>
+      <FileName>BoardGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLib.Game">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Class Name="GameLib.Game.IdNumber" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ASEEgAABAACAAAQAgAAAAAQAAAAEAAAAAAACABEAAhA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameLib.AR_Game">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="GameLib.Game" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="3.688" />
+        <Point X="4.24" Y="3.688" />
+        <Point X="4.24" Y="1.51" />
+        <Point X="8.75" Y="1.51" />
+        <Point X="8.75" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ACAgAAQAIACEAAAAgAAAAAAAAAAEAAAAAAACAAEAAAA=</HashCode>
+      <FileName>AR-Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLib.VideoGame">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="GameLib.Game" FixedFromPoint="true">
+      <Path>
+        <Point X="4" Y="3.688" />
+        <Point X="4.24" Y="3.688" />
+        <Point X="4.24" Y="1.51" />
+        <Point X="7" Y="1.51" />
+        <Point X="7" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ACAAAAACAACAAgAAgAEAAAABQAAEAAAAAAACAAAAAAA=</HashCode>
+      <FileName>VideoGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLib.SortByMaxPlayers">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>SortByMaxPlayers.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameLib.Interface">
+    <Position X="9.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Interface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GameLib.IInit">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAEAAAAAAACAAAAAAA=</HashCode>
+      <FileName>IInit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
