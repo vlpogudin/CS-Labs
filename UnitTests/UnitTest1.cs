@@ -200,7 +200,7 @@ namespace UnitTests
         [TestMethod]
         public void TestARGParamConstr_SetNeedGlasses() // конструктор с параметрами, св-во очков
         {
-            AR_Game arg = new AR_Game("test", 1, 6, 1, false, false);
+            AR_Game arg = new AR_Game("test", 1, 6, 1, "Телефон", 12, false, false);
             arg.NeedARGlasses = true;
             Assert.IsTrue(arg.NeedARGlasses);
         }
@@ -221,8 +221,8 @@ namespace UnitTests
         [TestMethod]
         public void TestARGGMethodEqualsObjects_SetNeedControllers() // одинаковые объекты, св-во контроллеров
         {
-            AR_Game arg1 = new AR_Game("Test", 2, 7, 11, false, false);
-            AR_Game arg2 = new AR_Game("Test", 2, 7, 11, false, true);
+            AR_Game arg1 = new AR_Game("Test", 2, 7, 11, "Dev", 10, false, false);
+            AR_Game arg2 = new AR_Game("Test", 2, 7, 11, "Dev", 10, false, true);
             arg1.NeedARControllers = true;
             Assert.IsTrue(arg1.Equals(arg2));
         }
@@ -230,8 +230,8 @@ namespace UnitTests
         [TestMethod]
         public void TestARGMethodDifferentObjects() // разные объекты
         {
-            AR_Game arg1 = new AR_Game("Test", 2, 7, 11, false, false);
-            AR_Game arg2 = new AR_Game("Test", 2, 7, 11, false, true);
+            AR_Game arg1 = new AR_Game("Test", 2, 7, 11, "Dev", 10, false, false);
+            AR_Game arg2 = new AR_Game("Test", 2, 7, 11, "Dev", 10, false, true);
             Assert.IsFalse(arg1.Equals(arg2));
         }
         #endregion

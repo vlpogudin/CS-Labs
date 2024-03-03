@@ -19,10 +19,17 @@ namespace GameLib
         #endregion
 
         #region Properties
-        public string Device // автоматическое св-во для устройства
+        public string Device // св-во для устройства
         {
             get { return device; }
-            set { device = value; }
+            set 
+            {
+                Regex latinLetters = new Regex("^[a-zA-Zа-яА-Я\\s]+$");
+                if (latinLetters.IsMatch(value))
+                    device = value;
+                else
+                    device = "Устройства нет";
+            }
         } 
 
         public int CountLevels // св-во для кол-ва уровней

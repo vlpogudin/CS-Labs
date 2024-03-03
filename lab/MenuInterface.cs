@@ -70,7 +70,7 @@ namespace lab
 
         static public void ExitProgram()
         {
-            ChangeColor("The program is over!\n", ConsoleColor.Red);
+            ChangeColor("Работа программы завершена!\n", ConsoleColor.Red);
         }
     }
 }

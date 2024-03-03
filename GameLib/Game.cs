@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Text.RegularExpressions;
 
 namespace GameLib
 {
@@ -24,7 +25,7 @@ namespace GameLib
                 set 
                 { 
                     if (value < 0)
-                        number = 0;
+                        number = 0; 
                     else
                         number = value;
                 }
@@ -38,7 +39,7 @@ namespace GameLib
         }
 
         protected Random rnd = new Random();
-        static string[] Names = { "Монополия", "Салки", "Шахматы", "Уно", "Fall Guys", "Гуси-лебеди", 
+        static string[] Names = { "Монополия", "Салки", "Шахматы", "Уно", "Fall Guys", "Гуси лебеди", 
             "CS VR", "Нарды", "Mario", "Minecraft", "Находка для шпиона" }; // мб закинуть все в файл
 
         #region Fields
@@ -52,7 +53,14 @@ namespace GameLib
         public string Name // свойство для названия игры (мб использовать регекс)
         {
             get { return name; }
-            set { name = value; }
+            set 
+            {
+                Regex latinLetters = new Regex("^[a-zA-Zа-яА-Я\\s]+$");
+                if (latinLetters.IsMatch(value))
+                    name = value; 
+                else
+                    name = "Названия нет";
+            }
         }
 
         public int MinCount // свойство для мин. кол-ва людей

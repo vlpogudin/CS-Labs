@@ -136,8 +136,8 @@ namespace lab
                                             {
                                                 if (item is Dish) { countDish++; }
                                                 else if (item is  BoardGame) { countBG++; }
-                                                else if (item is VideoGame) { countVG++; }
-                                                else { countARG++; }
+                                                else if (item is AR_Game) { countARG++; }
+                                                else { countVG++; }
                                                 item.Show();
                                                 Console.WriteLine();
                                             }
@@ -167,7 +167,7 @@ namespace lab
 
                                     case 3:
                                         {
-                                            Game g2 = new Game("Стоп, солдатик", 2, 4, 1);
+                                            Game g2 = new Game("Стоп солдатик", 2, 4, 1);
                                             array[5] = g2;
                                             Array.Sort(array, new SortByMaxPlayers());
                                             Interface.ChangeColor("\nОтсортированный массив по макс. кол-ву игроков: ", ConsoleColor.Green);

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GameLib
 {
-    public class AR_Game:Game
+    public class AR_Game : VideoGame
     {
         static bool[] various = { true, false };
 
@@ -39,7 +39,7 @@ namespace GameLib
             NeedARControllers = true;
         }
 
-        public AR_Game(string n, int minc, int maxc, int num, bool gl, bool cntr):base(n, minc, maxc, num) // конструктор с параметрами
+        public AR_Game(string n, int minc, int maxc, int num, string dev, int levc, bool gl, bool cntr):base(n, minc, maxc, num, dev, levc) // конструктор с параметрами
         {
             NeedARGlasses = gl;
             NeedARControllers = cntr;
